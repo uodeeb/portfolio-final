@@ -1,88 +1,201 @@
-* {
-    padding: 0px;
-    margin: 0px;
+
+
+/*--------------------------small screens---------------*/
+@media only screen and (min-width: 375px) and (max-width:699px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    #big__box {
+        width: 100vw;
+        height: 140vh;
+        background-color: bisque;
+    }
+   /*--------------------------header----------------------*/
+    #hd {
+        width: 100vw;
+        height: 20vh;
+        background-color:darkolivegreen;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #hd-1 {
+        /* width: 20vw; */
+        flex: 1;
+    }
+    
+    #hd-2 {
+        /* width: 50vw; */
+        flex: 1;
+    }
+    
+    #hd-3 {
+        /* width: 30vw; */
+        flex: 1;
+    }
+
+     /*--------------------------main----------------------*/
+     #mn {
+        width: 100vw;
+        height: 100vh;
+        background-color:darkblue;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "mn-1"
+        "mn-2"
+        "mn-3"
+        "mn-4"
+        ;
+        gap: 1vh;
+    }
+    
+    #mn-1 {
+        grid-area: mn-1;
+    }
+    
+    #mn-2 {
+        grid-area: mn-2;
+    }
+    
+    #mn-3 {
+        grid-area: mn-3;
+    }
+    
+    #mn-4 {
+        grid-area: mn-4;
+    }
+
+        /*--------------------------footer----------------------*/
+        #ft {
+            width: 100vw;
+            height: 20vh;
+            background-color:teal;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #ft-1 {
+            flex: 1;
+        }
+        #ft-2 {
+            flex: 1;
+        }    
 }
 
-#big__box {
-    width: 100vw;
-    height: 100vh;
-    background-color: bisque;
+
+
+/*--------------------------medium screens---------------*/
+@media only screen and (min-width: 700px) and (max-width: 999px){
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    #big__box {
+        width: 100vw;
+        height: 100vh;
+        background-color:blueviolet;
+    }
 }
 
 
+/*-----------------------large screens---------------*/
+@media only screen and (min-width: 1000px){
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    #big__box {
+        width: 100vw;
+        height: 100vh;
+        background-color: bisque;
+    }
+    
+    
+    
+    
+    
+    .hd-sec {
+        border: 1px solid #000;
+    }
+    /*--------------------------header----------------------*/
+    #hd {
+        width: 100vw;
+        height: 10vh;
+        background-color:darkolivegreen;
+        display: flex;
+    }
+    
+    #hd-1 {
+        /* width: 20vw; */
+        flex: 3;
+    }
+    
+    #hd-2 {
+        /* width: 50vw; */
+        flex: 5;
+    }
+    
+    #hd-3 {
+        /* width: 30vw; */
+        flex: 3;
+    }
+    
+    /*--------------------------main----------------------*/
+    #mn {
+        width: 100vw;
+        height: 80vh;
+        background-color:darkblue;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "mn-1 mn-4"
+        "mn-2 mn-4"
+        "mn-3 mn-4"
+        ;
+        gap: 1vh;
+    }
+    
+    #mn-1 {
+        grid-area: mn-1;
+    }
+    
+    #mn-2 {
+        grid-area: mn-2;
+    }
+    
+    #mn-3 {
+        grid-area: mn-3;
+    }
+    
+    #mn-4 {
+        grid-area: mn-4;
+    }
+    
+    /*--------------------------footer----------------------*/
+    #ft {
+        width: 100vw;
+        height: 10vh;
+        background-color:teal;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #ft-1 {
+        flex: 1;
+    }
+    #ft-2 {
+        flex: 1;
+    }
 
-
-
-.hd-sec {
-    border: 1px solid #000;
-}
-/*--------------------------header----------------------*/
-#hd {
-    width: 100vw;
-    height: 10vh;
-    background-color:darkolivegreen;
-    display: flex;
-}
-
-#hd-1 {
-    /* width: 20vw; */
-    flex: 3;
-}
-
-#hd-2 {
-    /* width: 50vw; */
-    flex: 5;
-}
-
-#hd-3 {
-    /* width: 30vw; */
-    flex: 3;
-}
-
-/*--------------------------main----------------------*/
-#mn {
-    width: 100vw;
-    height: 80vh;
-    background-color:darkblue;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "mn-4 mn-1"
-    "mn-3 mn-1"
-    "mn-2 mn-1"
-    ;
-    gap: 1vh;
-}
-
-#mn-1 {
-    grid-area: mn-1;
-}
-
-#mn-2 {
-    grid-area: mn-2;
-}
-
-#mn-3 {
-    grid-area: mn-3;
-}
-
-#mn-4 {
-    grid-area: mn-4;
-}
-
-/*--------------------------footer----------------------*/
-#ft {
-    width: 100vw;
-    height: 10vh;
-    background-color:teal;
-    display: flex;
-    flex-direction: column;
-}
-
-#ft-1 {
-    flex: 1;
-}
-#ft-2 {
-    flex: 1;
+    #logo {
+        width: 50px;
+        height: 50px;
+    }
 }
